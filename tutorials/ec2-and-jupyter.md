@@ -166,7 +166,7 @@ python
 Once inside the Python interpreter (you should see `>>>` at the left of your command line), run this code and enter your desired password that will be used to access your Jupyter Notebook in the browser (yes `passwd()` is missing the `o` and the `r`, that's just how they named it):
 
 ```python
-from notebook.auth import passwd(); passwd()
+from notebook.auth import passwd; passwd()
 ```
 
 After entering your password twice, type `quit()` and press `Enter` to quit out of the Python interpreter. To copy the hash value, at least when using PuTTY, use your mouse to select the full text of the hash (include the single quotes on both ends of the string) then right-click on the mouse. This will both copy and simultaneously paste that text. You can simply delete the pasted text from the command line. You may optionally paste the hash value in a Notepad editor locally on your machine to ensure you don't accidentally overwrite your clipboard.
